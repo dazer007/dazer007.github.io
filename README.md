@@ -164,3 +164,5 @@ This theme was created by [Pixel Hint](http://pixelhint.com/) and adapted for He
 ## Bugs
 
 If you have a question, feature request or a bug you need me to fix, please [click here](https://github.com/klugjo/hexo-theme-magnetic/issues/new) to file an issue.
+
+## 使用hexo+github搭建免费个人博客详细教程
