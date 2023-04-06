@@ -1,86 +1,98 @@
 ---
 home: true
-# heroImage: /img/web.png
-heroText: Dazer007's blog
-tagline: Web前端技术博客，积跬步以至千里，致敬每个爱学习的你。
-# actionText: 立刻进入 →
-# actionLink: /web/
-# bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+heroImage: /img/logo.svg
+heroText: MyBatis-Plus
+tagline: 🚀为简化开发而生
+actionText: 快速开始 →
+actionLink: /pages/24112f/
+bannerBg: none
 
 features: # 可选的
-  - title: 前端
-    details: JavaScript、ES6、Vue框架等前端技术
-    link: /web/ # 可选
-    imgUrl: /img/web.png # 可选
-  - title: 页面
-    details: html(5)/css(3)，前端页面相关技术
-    link: /ui/
-    imgUrl: /img/ui.png
-  - title: 技术
-    details: 技术文档、教程、技巧、总结等文章
-    link: /technology/
-    imgUrl: /img/other.png
+  - title: 润物无声
+    details: 只做增强不做改变，引入它不会对现有工程产生影响，如丝般顺滑。
+  - title: 效率至上
+    details: 只需简单配置，即可快速进行单表 CRUD 操作，从而节省大量时间。
+  - title: 丰富功能
+    details: 代码生成、自动分页、逻辑删除、自动填充等功能一应俱全。
 
-# 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
-# postList: detailed
-# simplePostListLength: 10 # 简约版文章列表显示的文章数量，默认10。（仅在postList设置为simple时生效）
-# hideRightBar: true # 是否隐藏右侧边栏
+postList: none
 ---
 
+<p align="center">
+  <a class="become-sponsor" href="/pages/4fedc2">支持这个项目</a>
+</p>
 
-<!-- 小熊猫 -->
-<!-- <img src="/img/panda-waving.png" class="panda no-zoom" style="width: 130px;height: 115px;opacity: 0.8;margin-bottom: -4px;padding-bottom:0;position: fixed;bottom: 0;left: 0.5rem;z-index: 1;"> -->
-
-<!--
-## 关于
-
-### 📚Blog
-这是一个兼具博客文章、知识管理、文档查找的个人网站，主要内容是Web前端技术。如果你喜欢这个博客&主题欢迎到[GitHub](https://github.com/xugaoyi/vuepress-theme-vdoing)点个Star、获取源码，或者交换[友链](/friends/) ( •̀ ω •́ )✧
-
-### 🎨Theme
-本站主题是根据[VuePress](https://vuepress.vuejs.org/zh/)的默认主题修改而成。取名`Vdoing`(维度)，旨在轻松打造一个`结构化`与`碎片化`并存的个人在线知识库&博客，让你的知识海洋像一本本书一样清晰易读。配合多维索引，让每一个知识点都可以快速定位！ 更多[详情](https://github.com/xugaoyi/vuepress-theme-vdoing)。
-
-<a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank"><img src='https://img.shields.io/github/stars/xugaoyi/vuepress-theme-vdoing' alt='GitHub stars' class="no-zoom"></a>
-<a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank"><img src='https://img.shields.io/github/forks/xugaoyi/vuepress-theme-vdoing' alt='GitHub forks' class="no-zoom"></a>
-
-</br>
-
-
-## 特色功能
-博客部分特色功能介绍
-
-#### 一站式技术搜索
-
-   博客内容中包含部分技术教程，可以利用搜索框快速搜索到相关文档，即使博客中没有的，你还可以选择最下方的 `在XXX中搜索“xxx”` 快速到达你想要找的内容。
-
-#### 深色模式与阅读模式
-关爱程序员，保护视力，点击右下角的主题模式按钮试试吧~
-
-#### Demo演示模块
-   为了更直观的展示一些代码的效果，博客添加了demo模块插件，可查看demo、源码，以及跳转到codepen在线编辑。**示例**：
-
-::: demo [vanilla]
-```html
-<html>
-  <div id="vanilla-box"></div>
-</html>
-<script>
-  var box = document.getElementById('vanilla-box')
-  box.innerHTML = 'Hello World! Welcome to EB'
-</script>
 <style>
-#vanilla-box {
-  color: #11a8cd;
-}
+  .become-sponsor{
+    padding: 8px 20px;
+    display: inline-block;
+    color: #11a8cd;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 1px solid #11a8cd;
+  }
 </style>
+
+<br/>
+
+### 🎖特别用户
+
+<a href="https://www.diboot.com/?from=mp" target="_blank">
+  <img class="no-zoom" height="70" width="224" src="https://www.diboot.com/diboot_slogon.png">
+</a>
+
+<a href="https://www.developers.pub/?from=mp" target="_blank">
+  <img class="no-zoom" height="70" width="224" src="https://static.developers.pub/86feb94f2aaf474882697919020749c1.png">
+</a>
+
+<a href="http://aizuda.com?from=mp" target="_blank">
+  <img class="no-zoom" height="70" width="224" src="/img/aizuda.png">
+</a>
+
+<a href="http://github.crmeb.net/u/MyBatis-Plus" target="_blank">
+  <img class="no-zoom" height="70" width="224" src="/img/crmeb3.gif">
+</a>
+
+### 当前最新版本
+
+```xml
+<dependency>
+    <groupId>com.baomidou</groupId>
+    <artifactId>mybatis-plus</artifactId>
+    <version>3.5.2</version>
+</dependency>
 ```
-:::
 
+### 苞米豆生态圈
 
-## :email: 联系
+- [MybatisX](https://github.com/baomidou/MybatisX) - 一款全免费且强大的 IDEA 插件，支持跳转，自动补全生成 SQL，代码生成。
+- [Mybatis-Mate](https://gitee.com/baomidou/mybatis-mate-examples) - 为 MyBatis-Plus 企业级模块，支持分库分表、数据审计、字段加密、数据绑定、数据权限、表结构自动生成 SQL 维护等高级特性。
+- [Dynamic-Datasource](https://gitee.com/baomidou/dynamic-datasource-spring-boot-starter) - 基于 SpringBoot 的多数据源组件，功能强悍，支持 Seata 分布式事务。
+- [Shuan](https://gitee.com/baomidou/shaun) - 基于 Pac4J-JWT 的 WEB 安全组件, 快速集成。
+- [Kisso](https://github.com/baomidou/kisso) - 基于 Cookie 的单点登录组件。
+- [Lock4j](https://gitee.com/baomidou/lock4j) - 基于 SpringBoot 同时支持 RedisTemplate、Redission、Zookeeper 的分布式锁组件。
+- [Kaptcha](https://gitee.com/baomidou/kaptcha-spring-boot-starter) - 基于 SpringBoot 和 Google Kaptcha 的简单验证码组件，简单验证码就选它。
+- [Aizuda 爱组搭](https://gitee.com/aizuda) - 低代码开发平台组件库。
 
-- **WeChat or QQ**: <a href="tencent://message/?uin=894072666&Site=&Menu=yesUrl" class='qq'>894072666</a>
-- **Email**: <a href="mailto:ab601026460@163.com">ab601026460@163.com</a>
-- **GitHub**: <https://github.com/dazer007>
+### 致谢
 
-</br>  -->
+MyBatis-Plus 已连续 5 年（[2017](https://www.oschina.net/project/top_cn_2017)、[2018](https://www.oschina.net/project/top_cn_2018)、[2019](https://www.oschina.net/project/top_cn_2019)、[2020](https://www.oschina.net/project/top_cn_2020)、[2021](https://www.oschina.net/project/top_cn_2021)）获得“OSC 年度最受欢迎中国开源软件”殊荣，感谢各位支持者的一路同行，我们会秉承 【为简化开发而生】 这一理念砥砺前行！
+
+### 代码托管
+
+> **[Gitee](https://gitee.com/baomidou/mybatis-plus)** | **[Github](https://github.com/baomidou/mybatis-plus)**
+
+### 参与贡献
+
+欢迎各路好汉一起来参与完善 MyBatis-Plus，我们期待你的 PR！
+
+- 贡献代码：代码地址 [MyBatis-Plus](https://github.com/baomidou/mybatis-plus) ，欢迎提交 Issue 或者 Pull Requests
+- 维护文档：文档地址 [MyBatis-Plus-Doc](https://github.com/baomidou/mybatis-plus-doc) ，欢迎参与翻译和修订
+
+### 教程、案例、使用者名单
+
+请移步至 [Awesome-MyBatis-Plus](https://github.com/baomidou/awesome-mybatis-plus) 查看。
+
+### 友情链接
+> [easy-es](https://easy-es.cn/) | [layui-vue](http://www.layui-vue.com/) | [jpom](https://jpom.top/)
+

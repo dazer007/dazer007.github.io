@@ -3,24 +3,25 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-
-#push_addr=`git remote get-url --push origin` # git提交地址，也可以手动设置，比如：push_addr=git@github.com:xugaoyi/vuepress-theme-vdoing.git
-push_addr=git@github.com:dazer007/dazer007.github.io.git # git提交地址，也可以手动设置，比如：push_addr=git@github.com:xugaoyi/vuepress-theme-vdoing.git
-#commit_info=`git describe --all --always --long`
-commit_info=deploy commit
-dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
-push_branch=gh-pages # 推送的分支
-
-# 生成静态文件
-npm run build
+# 生成文档
+yarn run build
 
 # 进入生成的文件夹
-cd $dist_path
+cd docs/.vuepress/dist
 
-git init
-git add -A
-git commit -m "deploy, $commit_info"
-git push -f $push_addr HEAD:$push_branch
+# 输出 CNAME 文件
+echo "baomidou.com" > CNAME
+echo "www.baomidou.com" >> CNAME
+echo "google.com, pub-4147143076931995, DIRECT, f08c47fec0942fa0" > ads.txt
 
-cd -
-rm -rf $dist_path
+# msg="来自Github Actions的自动部署，更新于$(TZ=UTC-8 date "+%Y-%m-%d %H:%M:%S")"
+# codingUrl=https://${CODING_USER}:${CODING_TOKEN}@e.coding.net/yangyang0507/mybatis-plus-doc.git
+
+# git config --global user.name "D.Yang"
+# git config --global user.email "koyangslash@gmail.com"
+
+# git init
+# git remote add origin $codingUrl
+# git add -A
+# git commit -m "${msg}"
+# git push -f origin master
