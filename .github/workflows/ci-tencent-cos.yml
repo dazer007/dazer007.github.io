@@ -1,5 +1,8 @@
 name: CI
 
+##CI: 上传文件到腾讯存储COS, 参考：https://github.com/zkqiang/tencent-cos-action
+##r如果上传文件到aliyun oss, 参考：https://github.com/fangbinwei/aliyun-oss-website-action
+
 on: 
   push:
     branches:
