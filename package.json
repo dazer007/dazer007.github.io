@@ -1,10 +1,13 @@
 {
-  "name": "mybatis-plus-doc",
+  "name": "dazer007-blog-doc",
+  "description": "可访问的地址 ityun.lt,dazer007.gitee.io,vercel.ityun.ltd",
+  "license": "MIT",
   "version": "1.0.0",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
+    "deploy-gitee": "bash deploy-gitee.sh",
     "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D",
     "editFm": "node utils/editFrontmatter.js"
   },
