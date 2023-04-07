@@ -4,24 +4,32 @@
 set -e
 
 # 生成文档
-yarn run build
-
-# 进入生成的文件夹
-cd docs/.vuepress/dist
+#yarn run build
 
 # 输出 CNAME 文件
-echo "baomidou.com" > CNAME
-echo "www.baomidou.com" >> CNAME
+echo "dazer007.gitee.io" > CNAME
+echo "github.ityun.ltd" >> CNAME
 echo "google.com, pub-4147143076931995, DIRECT, f08c47fec0942fa0" > ads.txt
 
-# msg="来自Github Actions的自动部署，更新于$(TZ=UTC-8 date "+%Y-%m-%d %H:%M:%S")"
-# codingUrl=https://${CODING_USER}:${CODING_TOKEN}@e.coding.net/yangyang0507/mybatis-plus-doc.git
+GIT_TOKEN=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 #your token, 以前可用通过账号密码验证，现在必须是token更安全。
+GIT_USERNAME=dazer007 #账号
+GIT_REPO=dazer007.github.io #仓库名称
 
-# git config --global user.name "D.Yang"
-# git config --global user.email "koyangslash@gmail.com"
+#push_addr=https://${GIT_USERNAME}:${GIT_TOKEN}@e.coding.net/yangyang0507/${GIT_REPO}.git
+push_addr=https://${GIT_TOKEN}@github.com/${GIT_USERNAME}/${GIT_REPO}.git
+commit_info="`git describe --all --always --long`',来自Github Actions的自动部署，更新于'$(TZ=UTC-8 date "+%Y-%m-%d %H:%M:%S")"
+dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
+push_branch=gh-pages # 推送的分支
 
-# git init
-# git remote add origin $codingUrl
-# git add -A
-# git commit -m "${msg}"
-# git push -f origin master
+# 进入生成的文件夹
+ cd $dist_path
+
+ git config --global user.name "dazer007"
+ git config --global user.email "ab601026460@163.com"
+
+ git init
+ git add -A
+ git commit -m "deploy, $commit_info"
+ git remote add origin $push_addr # 添加远程推送的仓库, 如：origin是一个名称，可用自行替换。
+ git push -f origin HEAD:$push_branch
+
