@@ -27,6 +27,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
+    "@vuepress/core": "^1.9.9",
     "vue-template-compiler": "^2.7.14"
   }
 }

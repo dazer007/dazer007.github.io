@@ -42,7 +42,7 @@ module.exports = [
     function vote() {
       var voteDetected_div = document.createElement("div");
       voteDetected_div.style.cssText = "position: absolute; top: 0; left: 0; width: 100%; background: #7bbfea; color: #fff; z-index: 9999999999; font-size: 14px; text-align: center; line-height: 1.5; font-weight: bold; padding-top: 6px; padding-bottom: 6px;";
-      voteDetected_div.innerHTML = "<a style='color:#fff;text-decoration:underline' target='_blank' href='https://www.oschina.net/project/top_cn_2021?id=36'>MyBatis-Plus 正在参与“2021年度 OSC 中国开源项目”评选，请为我们投上宝贵的一票，谢谢！</a>";
+      voteDetected_div.innerHTML = "<a style='color:#fff;text-decoration:underline' target='_blank' href='https://www.oschina.net/project/top_cn_2021?id=36'>Dazer007-Blog 正在参与“2021年度 OSC 中国开源项目”评选，请为我们投上宝贵的一票，谢谢！</a>";
       document.getElementsByTagName("body")[0].appendChild(voteDetected_div);
       voteDetected_div.onclick = function() {
         this.remove();

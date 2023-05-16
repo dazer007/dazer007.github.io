@@ -26,19 +26,18 @@
 
 ## 博客部署参考
 
-- MyBatis-Plus 已连续 5 年（[2017](https://www.oschina.net/project/top_cn_2017)、[2018](https://www.oschina.net/project/top_cn_2018)、[2019](https://www.oschina.net/project/top_cn_2019)、[2020](https://www.oschina.net/project/top_cn_2020)、[2021](https://www.oschina.net/project/top_cn_2021)）获得“OSC 年度最受欢迎中国开源软件”殊荣，感谢各位支持者的一路同行，我们会秉承 【为简化开发而生】 这一理念砥砺前行！
+1. 博客参考 `vuepress`, copy [mybatis-plus-doc](https://github.com/dazer007/dazer007.github.io-doc)
+2. vuepress扩展主题，`vuepress-theme-vdoing`,类似网站：[xugaoyi Evan's blog](https://xugaoyi.com/)、[easy-es.cn](https://www.easy-es.cn/)、
+[vuepress-theme-vdoing](https://doc.xugaoyi.com/)、[小薛博客](https://blog.xueqimiao.com/)、
+
 
 ## 代码托管
 
 > **[Gitee](https://gitee.com/dazer007/dazer007)** | **[Github](https://github.com/dazer007/dazer007.github.io)**
 
-## 本地编译运行
+## 代码编译
 
-欢迎各路好汉一起来参与完善 MyBatis-Plus，我们期待你的 PR！
-
-- 贡献代码：代码地址 [MyBatis-Plus](https://github.com/baomidou/mybatis-plus) ，欢迎提交 Issue 或者 Pull Requests
-- 维护文档：文档地址 [MyBatis-Plus-Doc](https://github.com/baomidou/mybatis-plus-doc) ，欢迎参与翻译和修订
-
-## vuepress部署参考
-
-请移步至 [Awesome-MyBatis-Plus](https://github.com/baomidou/awesome-mybatis-plus) 查看。
+1. 安装开发依赖 `pnpm install`
+2. 安装缺失的工具依赖 `pnpm install vue-template-compiler -g`
+3. 本地测试运行 `pnpm run dev`, 需要刪除掉`yarn.lock`
+4. 编译发布`pnpm run build`,编译后的html在`docs/vuepress/dist`目录，编译之后的文件就可以放到服务器上面部署了。
