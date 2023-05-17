@@ -3,8 +3,8 @@ home: true
 heroImage: /img/logo.svg
 heroText: Dazer007-Blog
 tagline: 🚀好记性不如烂笔头，勤能补拙
-actionText: 快速开始 →
-actionLink: /pages/24112f/
+actionText: 关于 →
+actionLink: /pages/f84a74/
 bannerBg: none
 
 features: # 可选的
@@ -77,8 +77,9 @@ postList: none
 5. [工具达人|实用工具分享达人](https://toolsdar.com/) 
 6. [十分导航-netlify、vercel国内域名被污染](https://10fen.netlify.app/)
 7. [Ai工具导航](https://ai-bot.cn/)
-7. [深度导航](https://www.deepdh.com/)
-7. [AIGC导航](https://www.aigc.cn/)
+8. [深度导航](https://www.deepdh.com/)
+9. [AIGC导航](https://www.aigc.cn/)
+10. [开发者武器库](https://devtool.tech/)
 
 ## 三、友情链接
 >  [hutool](https://gitee.com/dromara/hutool) | [easy-es](https://easy-es.cn/) | 

@@ -9,7 +9,6 @@ pnpm run build
 
 # 输出 CNAME 文件
 echo "dazer007.gitee.io" > CNAME
-echo "github.ityun.ltd" >> CNAME
 echo "google.com, pub-4147143076931995, DIRECT, f08c47fec0942fa0" > ads.txt
 
 # Gitee access_tokens 私人令牌的生成地址：https://gitee.com/profile/personal_access_tokens/
