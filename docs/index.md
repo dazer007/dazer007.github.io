@@ -43,12 +43,12 @@ postList: none
 - [Vercel部署Vuepress](https://vuepress.ityun.ltd/) - 通过vercel自动部署vuepress。
 - [Vercel部署Hexo](https://vercel.ityun.ltd/) - 通过vercel自动部署hexo。
 
+> 推荐使用`Vercel`完成自动化部署, 也可以直接使用`Github Page`、`Gitee Page`
 ### 1.2、博客部署参考
 
 1. 博客参考 `vuepress`, copy [mybatis-plus-doc](https://github.com/dazer007/dazer007.github.io-doc)
 2. vuepress扩展主题，`vuepress-theme-vdoing`,类似网站：[xugaoyi Evan's blog](https://xugaoyi.com/)、[easy-es.cn](https://www.easy-es.cn/)、
    [vuepress-theme-vdoing](https://doc.xugaoyi.com/)、[小薛博客](https://blog.xueqimiao.com/)、
-
 
 ### 1.3、代码托管
 
@@ -68,6 +68,7 @@ postList: none
 1. [WebStackPage/WebStackPage.github.io](https://github.com/WebStackPage/WebStackPage.github.io)
 2. [xjh22222228/nav](https://github.com/xjh22222228/nav)
 
+> 推荐使用WebStackPage-Vue借助`netlify.com`完成自动化部署
 ### 2.2 收集导航网站
 
 1. [图欧资源导航](https://tuostudy.com/)

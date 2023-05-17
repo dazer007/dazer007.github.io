@@ -27,7 +27,7 @@ module.exports = [
       { text: "支持", link: "/pages/4fedc2/" },
     ]
   },
-  { text: "🤖 导航", link: "https://nav.ityun.ltd" },
+  { text: "🤖 导航", link: "https://nav.ityun.ltd/" },
   { text: "🔥 语雀", link: "https://www.yuque.com/dazer007/it" },
   { text: "🚀 CSDN", link: "https://blog.csdn.net/ab601026460" },
 ];
