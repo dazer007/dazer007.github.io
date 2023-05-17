@@ -35,8 +35,8 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3 # 使用部署到 GitHub pages 的 action
         with:
-          publish_dir: ./dist # 部署打包后的 dist 目录
+          publish_dir: ./docs/.vuepress/dist # 部署打包后的 dist 目录,常规项目都是： ./dist
           github_token: ${{ secrets.DEPLOY_SECRET }} # secret 名; 如果提示：push remote: Invalid username or password.，请更新的token
           user_name: ${{ secrets.MY_USER_NAME }}
           user_email: ${{ secrets.MY_USER_EMAIL }}
-          commit_message: 自动部署 DEPLOY_DATE=$(TZ=':Asia/Shanghai' date '+%Y-%m-%d %T')  # 部署时的 git 提交信息，自由填写
+          commit_message: 来自Github Actions的自动部署，更新于'$(TZ=UTC-8 date "+%Y-%m-%d %H:%M:%S")"  # 部署时的 git 提交信息，自由填写
