@@ -2,7 +2,7 @@ name: push-2-ghpages
 #GitHub Actions 实现提交代码自动打包部署到 gh-pages https://juejin.cn/post/7054872300922863624
 
 on:
-  pull_request: #在master分支有pr的时候触发
+  pull_request: # 在master分支有pr的时候触发
     branches:
       - master
   push:
