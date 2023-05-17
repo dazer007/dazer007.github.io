@@ -19,10 +19,11 @@
 <br/>
 ## 访问地址
 
-- [Ityun](http://ityun.ltd/) - 自定义域名ityun.ltd, 背后是：dazer007.github.io, Github Page。
-- [Gitee page ](dazer007.gitee.io) - Gitee地址。
+- [Ityun](http://ityun.ltd/) - 自定义域名ityun.ltd, 背后是：Github Page: dazer007.github.io。
+- [Gitee page ](https://dazer007.gitee.io) - Gitee地址。
 - [Vercel部署Vuepress](https://vuepress.ityun.ltd/) - 通过vercel自动部署vuepress。
-- [Vercel部署Hexo](https://vercel.ityun.ltd/) - 通过vercel自动部署hexo。
+- [Vercel部署Vuepress的dev分支](https://dazer007-github-io-git-dev-dazer007.vercel.app) - 通过vercel自动部署vuepress。
+- [Vercel部署Hexo的hello word页面](https://vercel.ityun.ltd/) - 通过vercel自动部署hexo。
 
 ## 博客部署参考
 
@@ -41,3 +42,9 @@
 2. 安装缺失的工具依赖 `pnpm install vue-template-compiler -g`
 3. 本地测试运行 `pnpm run dev`, 需要刪除掉`yarn.lock`
 4. 编译发布`pnpm run build`,编译后的html在`docs/vuepress/dist`目录，编译之后的文件就可以放到服务器上面部署了。
+
+## Github自动部署说明
+
+1. `Github Pages`: 自动部署的分支是`gh-pages`
+2. `vercel`开发版部署的是`dev`分支
+3. `vercel`预览版部署的是`master`分支
