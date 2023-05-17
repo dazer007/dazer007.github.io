@@ -36,7 +36,7 @@ push_branch=gh-pages # 推送的分支
  git init
  git add -A
  git commit -m "deploy, $commit_info"
- git remote add origin $push_addr # 添加远程推送的仓库, 如：origin是一个名称，可用自行替换。
+ git remote add origin $push_addr # 添加远程推送的仓库, 如：origin是一个名称， 可用自行替换。
 
  echo '准备push到Github,Github平台可能由于网络原因，可能比较慢，甚至失败，请稍等...'
  echo '如果提示需要输入password,这里一定要输入上面的git token, github已经取消了密码验证，必须使用 personal access token; 个人觉得好傻，命名上面已经有token，Github还要我输入 '
