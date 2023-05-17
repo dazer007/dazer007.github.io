@@ -2,10 +2,10 @@ name: push-2-ghpages
 #GitHub Actions 实现提交代码自动打包部署到 gh-pages https://juejin.cn/post/7054872300922863624
 
 on:
-  push:
-    branches: [master] # master 分支有 push 时触发
-    paths-ignore:   # 下列文件的变更不触发部署，可以自行添加
-      - README.md
+  pull_request: #在master分支有pr的时候触发
+    branches:
+      - master
+
 
 jobs:
   deploy:
@@ -33,4 +33,4 @@ jobs:
           github_token: ${{ secrets.DEPLOY_SECRET }} # secret 名
           user_name: ${{ secrets.MY_USER_NAME }}
           user_email: ${{ secrets.MY_USER_EMAIL }}
-          commit_message: 自动部署 # 部署时的 git 提交信息，自由填写
+          commit_message: 自动部署 "DEPLOY_DATE=$(TZ=':Asia/Shanghai' date '+%Y-%m-%d %T')"  # 部署时的 git 提交信息，自由填写
