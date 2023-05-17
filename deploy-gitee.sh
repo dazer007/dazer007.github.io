@@ -40,5 +40,6 @@ push_branch=gh-pages # 推送的分支
 
  echo '准备push到Gitee'
  echo ''
+ echo ''
  git push -f gitee HEAD:$push_branch
 

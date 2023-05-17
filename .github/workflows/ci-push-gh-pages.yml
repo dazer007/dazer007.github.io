@@ -2,13 +2,15 @@ name: push-2-ghpages
 #GitHub Actions 实现提交代码自动打包部署到 gh-pages https://juejin.cn/post/7054872300922863624
 
 on:
-  pull_request: #在master分支有pr的时候触发
+  pull_request: # 在main分支有pr的时候触发
     branches:
-      - master
+      - main
   push:
-    branches: [master] # master 分支有 push 时触发;
-    paths-ignore:   # 下列文件的变更不触发部署，可以自行添加
+    branches: [main] # main 分支有 push 时触发;
+    paths-ignore:   # 下列文件的变更不触发部署， 可以自行添加
       - README.md
+  release:
+    types: [published]
 
 
 jobs:
@@ -34,7 +36,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3 # 使用部署到 GitHub pages 的 action
         with:
           publish_dir: ./dist # 部署打包后的 dist 目录
-          github_token: ${{ secrets.DEPLOY_SECRET }} # secret 名
+          github_token: ${{ secrets.DEPLOY_SECRET }} # secret 名; 如果提示：push remote: Invalid username or password.，请更新的token
           user_name: ${{ secrets.MY_USER_NAME }}
           user_email: ${{ secrets.MY_USER_EMAIL }}
-          commit_message: 自动部署 "DEPLOY_DATE=$(TZ=':Asia/Shanghai' date '+%Y-%m-%d %T')"  # 部署时的 git 提交信息，自由填写
+          commit_message: 自动部署 DEPLOY_DATE=$(TZ=':Asia/Shanghai' date '+%Y-%m-%d %T')  # 部署时的 git 提交信息，自由填写
