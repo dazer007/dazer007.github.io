@@ -2,11 +2,11 @@ name: push-2-ghpages
 #GitHub Actions 实现提交代码自动打包部署到 gh-pages https://juejin.cn/post/7054872300922863624
 
 on:
-  pull_request: # 在master分支有pr的时候触发
+  pull_request: # 在main分支有pr的时候触发
     branches:
-      - master
+      - main
   push:
-    branches: [master] # master 分支有 push  时触发;
+    branches: [main] # main 分支有 push  时触发;
     paths-ignore:   # 下列文件的变更不触发部署， 可以自行添加
       - README.md
   release:
