@@ -23,7 +23,7 @@ GIT_REPO=dazer007 #仓库名称,repo
 
 
 push_addr=https://${GIT_USERNAME}:${GIT_TOKEN}@gitee.com:/${GIT_USERNAME}/${GIT_REPO}.git
-commit_info="`git describe --all --always --long`',来自Github Actions的自动部署，更新于'$(TZ=UTC-8 date "+%Y-%m-%d %H:%M:%S")"
+commit_info="`git describe --all --always --long`',来自手工打包生成gh-pages部署 to Gitee，更新于'$(TZ=UTC-8 date "+%Y-%m-%d %H:%M:%S")"
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 push_branch=gh-pages # 推送的分支
 
@@ -39,6 +39,7 @@ push_branch=gh-pages # 推送的分支
  git remote add gitee $push_addr # 添加远程推送的仓库, 如：origin是一个名称，可用自行替换。
 
  echo '准备push到Gitee'
+ echo ''
  echo ''
  git push -f gitee HEAD:$push_branch
 

@@ -13,7 +13,7 @@ echo "google.com, pub-4147143076931995, DIRECT, f08c47fec0942fa0" > ads.txt
 
 # Github tokens (Personal Access Tokens) 私人令牌的生成地址：https://github.com/settings/tokens
 # personal access tokens 私人令牌
-GIT_TOKEN=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 #your token, 以前可用通过账号密码验证，现在必须是token更安全。
+GIT_TOKEN=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 #your token, 以前可用通过账号密码验证，现在必须是token更安全。 如果提示：push remote: Invalid username or password.，请更好你的token
 GIT_USERNAME=dazer007 #账号，owner,username
 GIT_REPO=dazer007.github.io #仓库名称,repo
 
@@ -23,7 +23,7 @@ GIT_REPO=dazer007.github.io #仓库名称,repo
 # remote: Support for password authentication was removed on August 13, 2021.；
 # 参考：2021.8.13起，Github要求使用基于令牌的身份验证 （取消了密码账号登录，改成了token令牌机制） https://zhuanlan.zhihu.com/p/401978754
 push_addr=https://${GIT_TOKEN}@github.com/${GIT_USERNAME}/${GIT_REPO}.git
-commit_info="`git describe --all --always --long`',来自Github Actions的自动部署，更新于'$(TZ=UTC-8 date "+%Y-%m-%d %H:%M:%S")"
+commit_info="`git describe --all --always --long`',来自手工打包生成gh-pages部署 to Github，更新于'$(TZ=UTC-8 date "+%Y-%m-%d %H:%M:%S")"
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 push_branch=gh-pages # 推送的分支
 
@@ -40,4 +40,5 @@ push_branch=gh-pages # 推送的分支
 
  echo '准备push到Github,Github平台可能由于网络原因，可能比较慢，甚至失败，请稍等...'
  echo '如果提示需要输入password,这里一定要输入上面的git token, github已经取消了密码验证，必须使用 personal access token; 个人觉得好傻，命名上面已经有token，Github还要我输入 '
+ echo '如果提示：push remote: Invalid username or password.，请更新的token'
  git push -f origin HEAD:$push_branch
