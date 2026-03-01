@@ -50,7 +50,7 @@ module.exports = [
     text: '技术',
     link: '/technology/',
     items: [
-      { text: "Idea", link: "/pages/idea_atguigu/" },
+      { text: "Idea",  link: "/pages/idea_atguigu/" },
       { text: "Maven", link: "/pages/maven_atguigu/" },
     ],
   },
