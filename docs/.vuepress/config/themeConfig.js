@@ -17,14 +17,22 @@ module.exports = {
   editLinkText: "帮助我们改善此页面！",
 
   // Vdoing Theme Config
-  sidebar: { mode: "structuring", collapsable: false },
-
-  updateBar: {
-    showToArticle: false
+  sidebar: {
+    mode: "structuring",
+    collapsable: true,
+    exclude: [
+      // 序号出错，请填写正确的序号, 忽略图片目录生成序号
+      '**/idea_assert/**',
+      '**/maven_image/**'
+    ]
   },
 
-  category: false,
-  tag: false,
+  updateBar: {
+    showToArticle: true
+  },
+
+  category: true,
+  tag: true,
   archive: true,
 
   author: {
