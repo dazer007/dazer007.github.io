@@ -21,9 +21,15 @@ module.exports = {
     mode: "structuring",
     collapsable: true,
     exclude: [
-      // 序号出错，请填写正确的序号, 忽略图片目录生成序号
       '**/idea_assert/**',
-      '**/maven_image/**'
+      '**/maven_image/**',
+      // 忽略所有非 Markdown 文件
+      '*.png',
+      '*.jpg',
+      '*.jpeg',
+      '*.gif',
+      '*.svg',
+      '*.pdf'
     ]
   },
 
