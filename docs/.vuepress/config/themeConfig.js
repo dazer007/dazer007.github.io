@@ -21,7 +21,6 @@ module.exports = {
     mode: "structuring",
     collapsable: true,
     exclude: [
-      // 忽略图片资源目录（不以数字序号开头的目录）
       '**/idea_assert/**',
       '**/maven_image/**',
       // 忽略所有非 Markdown 文件
