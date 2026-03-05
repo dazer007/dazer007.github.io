@@ -5,9 +5,11 @@ module.exports = [
     link: "/web/",//目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       {
-        text: '前端文章',
+        text: '前端三剑客',
         items: [
+          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
           { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
+          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' }
         ],
       },
       {
@@ -39,19 +41,35 @@ module.exports = [
     ]
   },
   {
-    text: '页面',
-    link: '/ui/',
-    items: [
-      { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-      { text: 'CSS', link: '/pages/0a83b083bdf257cb/' }
-    ],
-  },
-  {
     text: '技术',
     link: '/technology/',
     items: [
-      { text: "Idea",  link: "/pages/idea_atguigu/" },
-      { text: "Maven", link: "/pages/maven_atguigu/" },
+      {
+        text: '开发工具',
+        items: [
+          { text: "Idea",  link: "/pages/idea_atguigu/" },
+          { text: "Maven", link: "/pages/maven_atguigu/" },
+          { text: "配置中心", link: "/pages/configuration-center/" },
+        ],
+      },
+      {
+        text: 'JAVA',
+        items: [
+          { text: "程序员DD(javaFeatures)",  link: "https://www.didispace.com/" },
+        ],
+      },
+      {
+        text: 'Spring',
+        items: [
+          { text: "小薛博客(SpringCloud)",  link: "https://xueqimiao.com/springcloudalibaba/01、Cloud和Boot版本选择.html" },
+        ],
+      },
+      {
+        text: '云原生',
+        items: [
+          { text: "K8S",  link: "https://xueqimiao.com/k8s/01.Kubernetes%E7%AE%80%E4%BB%8B.html" },
+        ],
+      }
     ],
   },
   {
