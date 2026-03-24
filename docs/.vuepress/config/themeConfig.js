@@ -23,6 +23,8 @@ module.exports = {
     exclude: [
       '**/idea_assert/**',
       '**/maven_image/**',
+      '**/img/**',
+      '**/vue_img/**',
       // 忽略所有非 Markdown 文件
       '*.png',
       '*.jpg',

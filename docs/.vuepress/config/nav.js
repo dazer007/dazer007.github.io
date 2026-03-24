@@ -19,11 +19,6 @@ module.exports = [
           { text: '《JavaScript高级程序设计》', link: '/note/js/' },
           { text: '《ES6 教程》', link: '/note/es6/' },
           { text: '《Vue》', link: '/note/vue/' },
-          { text: '《React》', link: '/note/react/' },
-          {
-            text: '《TypeScript 从零实现 axios》',
-            link: '/note/typescript-axios/',
-          },
           {
             text: '《Git》',
             link: '/note/git/',
@@ -70,6 +65,26 @@ module.exports = [
           { text: "K8S",  link: "https://xueqimiao.com/k8s/01.Kubernetes%E7%AE%80%E4%BB%8B.html" },
         ],
       }
+    ],
+  },
+  {
+    text: 'AI 工具',
+    link: '/ai/',
+    items: [
+      {
+        text: '学习笔记',
+        items: [
+          { text: "AI-GUIDE", link: "/pages/ai-guide/" },
+          { text: "OpenCLaw 导航文档", link: "/ai/openclaw/" },
+        ],
+      },
+      {
+        text: 'AI 导航',
+        items: [
+          { text: "Ai 工具导航", link: "https://ai-bot.cn/" },
+          { text: "AIGC 导航", link: "https://www.aigc.cn/" },
+        ],
+      },
     ],
   },
   {
