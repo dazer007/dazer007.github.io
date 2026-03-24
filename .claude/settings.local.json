@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv \"Agent=LLM+Skills+MCP+Tools架构图.png\" \"agent-architecture.png\")",
+      "Bash(mv \"MCP模型上下文协议.png\" \"mcp-protocol.png\")",
+      "Bash(cd:*)",
+      "Bash(mv \"尚硅谷_宋红康_Java开发利器：IDEA的安装与使用（上）.pdf\" \"idea-install-guide-part1.pdf\")",
+      "Bash(mv \"尚硅谷_宋红康_Java开发利器：IDEA的安装与使用（下）.pdf\" \"idea-install-guide-part2.pdf\")",
+      "Bash(mv \"尚硅谷_宋红康_IntelliJ0IDEA_常用快捷键一览表.pdf\" \"idea-shortcuts.pdf\")",
+      "Bash(mv \"IDEA-v2022.x版本使用全攻略_尚硅谷-宋红康.png\" \"idea-v2022-guide.png\")",
+      "WebSearch",
+      "Bash(npm view:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(pnpm install:*)"
+    ]
+  }
+}
