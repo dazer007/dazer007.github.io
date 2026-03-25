@@ -38,6 +38,7 @@ features:
 - [Ityun](http://ityun.ltd/) - 自定义域名 ityun.ltd
 - [Gitee Page](https://dazer007.gitee.io/) - Gitee 地址
 - [Vercel](https://vuepress.ityun.ltd/) - Vercel 自动部署
+- [dselegent-blog](https://dselegent-blog.netlify.app/) - dselegent-blog经典前后端博客
 
 ## 代码托管
 

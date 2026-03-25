@@ -72,6 +72,7 @@ export default defineConfig({
         items: [
           { text: 'IDEA 培训', link: '/02.技术/01.《idea》培训课件/01.IntelliJ IDEA 培训课件' },
           { text: 'Maven', link: '/02.技术/02.《Maven》新版笔记/01.Maven依赖管理项目构建工具' },
+          { text: '配置中心 Apollo', link: '/02.技术/03. 配置中心/01.配置中心Apollo' },
         ]
       },
       {
