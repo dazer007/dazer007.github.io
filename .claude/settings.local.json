@@ -11,7 +11,29 @@
       "WebSearch",
       "Bash(npm view:*)",
       "WebFetch(domain:github.com)",
-      "Bash(pnpm install:*)"
+      "Bash(pnpm install:*)",
+      "WebFetch(domain:vitepress.dev)",
+      "WebFetch(domain:vitejs.cn)",
+      "Bash(cp:*)",
+      "WebFetch(domain:vitepress-theme-plume.pwp.app)",
+      "WebFetch(domain:www.npmjs.com)",
+      "Bash(npm info:*)",
+      "Bash(npm search:*)",
+      "Bash(npm install:*)",
+      "Bash(npm cache:*)",
+      "Bash(ls \"D:\\\\Users\\\\work\\\\android-project\\\\my-self\\\\dazer007.gitee.io\\\\docs\\\\《ES6 教程》笔记\"/*.md)",
+      "Bash(xargs -I{} basename {})",
+      "Bash(ls D:Usersworkandroid-projectmy-selfdazer007.gitee.iodocs《JavaScript教程》笔记/*.md)",
+      "Bash(find D:Usersworkandroid-projectmy-selfdazer007.gitee.iodocs.vuepress -name *.png -o -name *.jpg -o -name *.svg -o -name *.gif)",
+      "WebFetch(domain:docs.bugdesigner.cn)",
+      "Bash(curl -s \"https://docs.bugdesigner.cn/docs/Tutorial/vitepress.html\")",
+      "Bash(curl -s \"https://docs.bugdesigner.cn/utils/auto-gen-sidebar.mjs\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/AZCodingAccount/docs/main/utils/auto-gen-sidebar.mjs\")",
+      "Bash(curl -s \"https://api.github.com/search/code?q=auto-gen-sidebar+in:file+language:JavaScript\")",
+      "Bash(curl -s https://raw.githubusercontent.com/AZCodingAccount/docs/main/utils/auto-gen-sidebar.mjs)",
+      "Bash(pnpm run:*)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(gh pr:*)"
     ]
   }
 }

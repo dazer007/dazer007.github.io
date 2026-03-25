@@ -1,0 +1,45 @@
+/* 自定义样式 */
+
+:root {
+  --vp-c-brand-1: #11a8cd;
+  --vp-c-brand-2: #0d8ab0;
+  --vp-c-brand-3: #0a6d8f;
+  --vp-c-brand-soft: rgba(17, 168, 205, 0.14);
+}
+
+/* 首页 hero 图片 */
+.VPHero .image-bg {
+  border-radius: 50%;
+}
+
+/* 深色模式调整 */
+.dark {
+  --vp-c-brand-1: #4dd0e1;
+  --vp-c-brand-2: #26c6da;
+}
+
+/* 代码块样式 */
+.vp-code-group .tabs label {
+  font-weight: 500;
+}
+
+/* 表格样式 */
+table {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+/* 链接样式 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+}
+
+/* 图片居中 */
+.vp-doc img {
+  margin: 0 auto;
+}
+
+/* 内容宽度 */
+.VPDoc .content-container {
+  max-width: 900px;
+}
