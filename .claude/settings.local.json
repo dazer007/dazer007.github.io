@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv \"Agent=LLM+Skills+MCP+Tools架构图.png\" \"agent-architecture.png\")",
+      "Bash(mv \"MCP模型上下文协议.png\" \"mcp-protocol.png\")",
+      "Bash(cd:*)",
+      "Bash(mv \"尚硅谷_宋红康_Java开发利器：IDEA的安装与使用（上）.pdf\" \"idea-install-guide-part1.pdf\")",
+      "Bash(mv \"尚硅谷_宋红康_Java开发利器：IDEA的安装与使用（下）.pdf\" \"idea-install-guide-part2.pdf\")",
+      "Bash(mv \"尚硅谷_宋红康_IntelliJ0IDEA_常用快捷键一览表.pdf\" \"idea-shortcuts.pdf\")",
+      "Bash(mv \"IDEA-v2022.x版本使用全攻略_尚硅谷-宋红康.png\" \"idea-v2022-guide.png\")",
+      "WebSearch",
+      "Bash(npm view:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(pnpm install:*)",
+      "WebFetch(domain:vitepress.dev)",
+      "WebFetch(domain:vitejs.cn)",
+      "Bash(cp:*)",
+      "WebFetch(domain:vitepress-theme-plume.pwp.app)",
+      "WebFetch(domain:www.npmjs.com)",
+      "Bash(npm info:*)",
+      "Bash(npm search:*)",
+      "Bash(npm install:*)",
+      "Bash(npm cache:*)",
+      "Bash(ls \"D:\\\\Users\\\\work\\\\android-project\\\\my-self\\\\dazer007.gitee.io\\\\docs\\\\《ES6 教程》笔记\"/*.md)",
+      "Bash(xargs -I{} basename {})",
+      "Bash(ls D:Usersworkandroid-projectmy-selfdazer007.gitee.iodocs《JavaScript教程》笔记/*.md)",
+      "Bash(find D:Usersworkandroid-projectmy-selfdazer007.gitee.iodocs.vuepress -name *.png -o -name *.jpg -o -name *.svg -o -name *.gif)",
+      "WebFetch(domain:docs.bugdesigner.cn)",
+      "Bash(curl -s \"https://docs.bugdesigner.cn/docs/Tutorial/vitepress.html\")",
+      "Bash(curl -s \"https://docs.bugdesigner.cn/utils/auto-gen-sidebar.mjs\")",
+      "Bash(curl -s \"https://raw.githubusercontent.com/AZCodingAccount/docs/main/utils/auto-gen-sidebar.mjs\")",
+      "Bash(curl -s \"https://api.github.com/search/code?q=auto-gen-sidebar+in:file+language:JavaScript\")",
+      "Bash(curl -s https://raw.githubusercontent.com/AZCodingAccount/docs/main/utils/auto-gen-sidebar.mjs)",
+      "Bash(pnpm run:*)",
+      "Bash(curl -s http://localhost:5173)",
+      "Bash(gh pr:*)"
+    ]
+  }
+}
