@@ -10,6 +10,15 @@ export default defineConfig({
   // 路由清理
   cleanUrls: true,
 
+  // 忽略死链接检查
+  // 忽略 localhost 链接（教程示例）和不存在的内部链接
+  ignoreDeadLinks: [
+    // 忽略 localhost 链接（Maven 教程示例）
+    /^https?:\/\/localhost/,
+    // 忽略以 /ai/, /technology/, /web/ 开头的旧链接
+    /^\/(ai|technology|web)\//
+  ],
+
   // 最后更新时间
   lastUpdated: true,
 
