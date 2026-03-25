@@ -24,7 +24,7 @@ GIT_REPO=dazer007.github.io #仓库名称,repo
 # 参考：2021.8.13起，Github要求使用基于令牌的身份验证 （取消了密码账号登录，改成了token令牌机制） https://zhuanlan.zhihu.com/p/401978754
 push_addr=https://${GIT_TOKEN}@github.com/${GIT_USERNAME}/${GIT_REPO}.git
 commit_info="`git describe --all --always --long`',来自手工打包生成gh-pages部署 to Github，更新于'$(TZ=UTC-8 date "+%Y-%m-%d %H:%M:%S")"
-dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
+dist_path=docs/.vitepress/dist # 打包生成的文件夹路径 (VitePress)
 push_branch=gh-pages # 推送的分支
 
 # 进入生成的文件夹
