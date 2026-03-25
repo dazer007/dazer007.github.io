@@ -33,7 +33,8 @@
       "Bash(curl -s https://raw.githubusercontent.com/AZCodingAccount/docs/main/utils/auto-gen-sidebar.mjs)",
       "Bash(pnpm run:*)",
       "Bash(curl -s http://localhost:5173)",
-      "Bash(gh pr:*)"
+      "Bash(gh pr:*)",
+      "Bash(head:*)"
     ]
   }
 }
