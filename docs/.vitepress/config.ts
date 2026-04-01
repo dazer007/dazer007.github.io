@@ -80,6 +80,7 @@ export default defineConfig({
         items: [
           { text: 'LLM/Agent 指南', link: '/03.AI/01.llm-agent-skill-guide' },
           { text: 'OpenCLaw 导航', link: '03.AI/02.OpenCLaw 导航' },
+          { text: 'Claude Code', link: '/03.AI/03.Claude Code' },
         ]
       },
       {
@@ -168,6 +169,7 @@ export default defineConfig({
           items: [
             { text: '01.llm-agent-skill-guide', link: '/03.AI/01.llm-agent-skill-guide' },
             { text: '02.OpenCLaw 导航页面', link: '/03.AI/02.OpenCLaw 导航' },
+            { text: '03.Claude Code 入门指南', link: '/03.AI/03.Claude Code' },
           ]
         }
       ],
