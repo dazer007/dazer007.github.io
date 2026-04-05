@@ -27,6 +27,6 @@ jobs:
           #确保配置：GitHub repo Settings → Secrets → GITEE_TOKEN 已配置（来自 https://gitee.com/profile/personal_access_tokens）
           GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
         run: |
-          git remote add gitee https://dazer007:${GITEE_TOKEN}@https://gitee.com/dazer007/dazer007.git
+          git remote add gitee https://dazer007:${GITEE_TOKEN}@gitee.com/dazer007/dazer007.git
           git push -f gitee --all
           git push -f gitee --tags
