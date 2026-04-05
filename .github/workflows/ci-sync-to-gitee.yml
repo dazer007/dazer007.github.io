@@ -1,6 +1,4 @@
 # 同步代码到 Gitee
-# 参考: https://yikun.github.io/2020/01/17/%E5%B7%A7%E7%94%A8Github-Action%E5%90%8C%E6%AD%A5%E4%BB%A3%E7%A0%81%E5%88%B0Gitee/
-# Github地址：https://github.com/Yikun/hub-mirror-action?tab=readme-ov-file#faq
 name: Sync-to-Gitee
 
 on:
@@ -15,19 +13,20 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Sync to Gitee
-        uses: Yikun/hub-mirror-action@master
+      - name: Checkout
+        # GitHub 官方维护的 action，用于将仓库代码克隆到 runner 的工作目录。
+        # GitHub 地址： https://github.com/actions/checkout#readme
+        # 作用： 把当前仓库代码下载到 $GITHUB_WORKSPACE 目录
+        # - fetch-depth: 0 表示获取完整历史（所有分支、所有提交），默认只获取最新一次提交
+        uses: actions/checkout@v4
         with:
-          # GitHub 用户名
-          src: github/dazer007
-          # Gitee 用户名
-          dst: gitee/dazer007
-          # 需要同步的仓库列表（逗号分隔）
-          static_list: "dazer007.github.io"
-          # 使用 HTTPS 方式推送（避免 SSH 密钥格式问题）
-          clone_style: "https"
-          # Gitee Token: https://gitee.com/profile/personal_access_tokens
-          dst_token: ${{ secrets.GITEE_TOKEN }}
-          # 强制更新
-          force_update: true
-          dst_key: ''
+          fetch-depth: 0
+
+      - name: Sync to Gitee
+        env:
+          #确保配置：GitHub repo Settings → Secrets → GITEE_TOKEN 已配置（来自 https://gitee.com/profile/personal_access_tokens）
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        run: |
+          git remote add gitee https://dazer007:${GITEE_TOKEN}@https://gitee.com/dazer007/dazer007.git
+          git push -f gitee --all
+          git push -f gitee --tags
