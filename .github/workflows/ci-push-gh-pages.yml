@@ -1,5 +1,5 @@
 name: push-2-ghpages
-#GitHub Actions 实现提交代码自动打包部署到 gh-pages https://juejin.cn/post/7054872300922863624
+#GitHub Actions 实现提交代码自动打包部署到 gh-pages分支 https://juejin.cn/post/7054872300922863624
 
 on:
   pull_request: # 在main分支有pr的时候触发
@@ -21,7 +21,7 @@ jobs:
       # 下载源码
       # 这一步就是检出你的仓库并下载里面的代码到runner中,actions/checkout@v2是官方自己造的轮子，直接拿来用就行
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2 # GitHub 地址： https://github.com/actions/checkout#readme
 
       # 打包构建
       - name: Build

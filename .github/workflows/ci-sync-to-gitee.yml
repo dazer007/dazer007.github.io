@@ -1,0 +1,32 @@
+# 同步代码到 Gitee
+name: Sync-to-Gitee
+
+on:
+  push:
+    branches:
+      - dev
+      - dev-vuepress
+      - main
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        # GitHub 官方维护的 action，用于将仓库代码克隆到 runner 的工作目录。
+        # GitHub 地址： https://github.com/actions/checkout#readme
+        # 作用： 把当前仓库代码下载到 $GITHUB_WORKSPACE 目录
+        # - fetch-depth: 0 表示获取完整历史（所有分支、所有提交），默认只获取最新一次提交
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Sync to Gitee
+        env:
+          #确保配置：GitHub repo Settings → Secrets → GITEE_TOKEN 已配置（来自 https://gitee.com/profile/personal_access_tokens）
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        run: |
+          git remote add gitee https://dazer007:${GITEE_TOKEN}@gitee.com/dazer007/dazer007.git
+          git push -f gitee --all
+          git push -f gitee --tags
