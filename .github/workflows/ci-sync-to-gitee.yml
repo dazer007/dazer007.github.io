@@ -1,0 +1,34 @@
+# 同步代码到 Gitee
+# 参考: https://yikun.github.io/2020/01/17/巧用Github-Action同步代码到Gitee/
+# Github地址：https://github.com/Yikun/hub-mirror-action?tab=readme-ov-file#faq
+name: Sync to Gitee
+
+on:
+  push:
+    branches:
+      - dev
+      - dev-vuepress
+      - main
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync to Gitee
+        uses: Yikun/hub-mirror-action@master
+        with:
+          # GitHub 用户名
+          src: github/dazer007
+          # Gitee 用户名
+          dst: gitee/dazer007
+          # 需要同步的仓库列表（逗号分隔）
+          static_list: "dazer007.github.io"
+          # Gitee SSH Key: https://gitee.com/profile/sshkeys
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          # Gitee Token: https://gitee.com/profile/personal_access_tokens
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          # 强制更新
+          force_update: true
+          # 输出debug信息
+          debug: true
