@@ -34,7 +34,8 @@
       "Bash(pnpm run:*)",
       "Bash(curl -s http://localhost:5173)",
       "Bash(gh pr:*)",
-      "Bash(head:*)"
+      "Bash(head:*)",
+      "mcp__uTools__utools_everythingfind_search_files"
     ]
   }
 }
