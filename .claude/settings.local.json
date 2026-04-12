@@ -35,7 +35,8 @@
       "Bash(curl -s http://localhost:5173)",
       "Bash(gh pr:*)",
       "Bash(head:*)",
-      "mcp__uTools__utools_everythingfind_search_files"
+      "mcp__uTools__utools_everythingfind_search_files",
+      "WebFetch(domain:ocn0xcqc407f.feishu.cn)"
     ]
   }
 }
